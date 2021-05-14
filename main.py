@@ -11,7 +11,7 @@ def Browser():
     browser  = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver")
     browser.maximize_window()
     browser.get("https://mawaqit.net/fr/m/imam-malik-sorgues")
-    time.sleep(3)
+    time.sleep(35)
     browser.find_element_by_id("cookie-accept-button").click()
     os.system("xdotool key F11")
     browser.execute_script("document.body.style.zoom='80%'")

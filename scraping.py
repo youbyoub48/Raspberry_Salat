@@ -14,8 +14,7 @@ class Scraping():
         chromeOptions.headless = True
         browser  = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", options=chromeOptions)
         browser.get("https://mawaqit.net/fr/m/imam-malik-sorgues")
-        sleep(2)
-        browser.find_element_by_id("cookie-accept-button").click()
+        sleep(25)
         soup = BeautifulSoup(browser.page_source, "html.parser")
         horaire = []
         for p in soup.find_all(class_="time"):
